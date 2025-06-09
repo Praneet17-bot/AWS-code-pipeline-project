@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/my-app
+hooks:
+  AfterInstall:
+    - location: scripts/install_dependencies.sh
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/start_server.sh
+      runas: ec2-user
