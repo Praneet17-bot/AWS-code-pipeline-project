@@ -3,13 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "No dependencies to install for static site"
+      - echo "Static site - nothing to install"
   build:
     commands:
-      - echo "No build steps needed for static HTML"
+      - echo "No build needed for static files"
   post_build:
     commands:
-      - echo "Build completed on `date`"
+      - echo "Build finished on `date`"
 
 artifacts:
   files:
